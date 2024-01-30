@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title%}
+Home
+{% endblock %}
+
+
+{% block content%}
+
+
+<div class="home-img1">
+   <div class="welcome">
+      <h5>Committed to care,<br> dedicated to health.</h5>
+   </div>
+</div>
+<div class="home-img2">
+   <div class="quote-section">
+      <h5>Where compassion meets care, and every heartbeat matters. <br>At ABC Hospital, we strive to heal not just the body, but also the spirit. <br>Your well-being is our priority, and together, we journey towards a healthier and happier life.<h5>
+   </div>
+</div>
+
+
+
+   <div class="p-5 bg-light">
+      <div class="container text-center">
+         <h1>Feedback Form</h1>
+         <div class="row align-items-center">
+            <div class="col-md-12">
+            <div id="feedback-form-modal">
+      
+               <div class="modal-body">
+                  <form>
+                  <div class="form-group">
+                     <h6 class="exampleFormControlTextarea1">How likely you would like to rate our hospital services?</h1>
+                     <div class="rating-input-wrapper d-flex justify-content-between mt-2">
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">1</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">2</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">3</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">4</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">5</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">6</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">7</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">8</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">9</span></label>
+                        <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">10</span></label>
+                     </div>
+                     <div class="rating-labels d-flex justify-content-between mt-1">
+                        <label>Very unlikely</label>
+                        <label>Very likely</label>
+                     </div>
+                  </div>
+                  
+                  <div class="form-group">
+                     <label for="input-two">Let's write a feedback here</label>
+                     <textarea class="form-control" id="input-two" rows="3"></textarea>
+                  </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                           <button type="button" class="btn btn-primary">Submit</button>
+               </div>
+        
+   </div>
+   </div>
+   </div>
+</div>
+
+
+
+{% endblock %}

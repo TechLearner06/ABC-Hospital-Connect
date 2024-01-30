@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title%}
+contact
+{% endblock%}
+
+{% block content%}
+
+
+<div class="container d-flex justify-content-center p-5">
+    <div class="row col-md-8 col-6 align-items-center mb-4" >
+        <h5 class=" text-info">Get in Touch</h5>
+        <h6 class="text-info text-left">We understand that communication is essential,and we strive to make it as easy as possible for you to get in touch with us.</h6>
+       <div class="contact-details">
+            <h4 class="mb-3 text-secondary">Abc hospital</h4>
+            <br>
+            <h6 class="text-secondary">kacherippady<br>near metropillar no 678<br>Opposite kalyansilks</h6>
+            <br>
+            <h6 class="mb-3 text-secondary">Abchospital@gmail.com</h6>
+            <br>
+            <h6 class="mb-3 text-secondary">Call us on:<br>9876567898,o484-255678</h6>
+            <br>
+        </div>
+    </div>
+    <div class="row col-md-4 col-6">
+        <div class="form w-25">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{contact_form.as_p}}
+                <br>
+                <button type="submit" class="btn-success">Submit</button>
+            </form>
+        </div>
+       
+    </div>
+
+{% endblock%}
+
+
+

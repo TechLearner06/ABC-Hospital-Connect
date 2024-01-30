@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block title%}
+doctors
+{% endblock%}
+
+{% block content%}
+
+<div class="doc-img img-fluid p-3">
+    <h1 class="text-center text-info">Our Doctors</h1>
+<hr>
+<div class="doc-page p-5">
+    
+    
+    {% for d in doctors %}
+    
+    <div class="card text-center text-secondary mx-3 my-3" style="width: 18rem; height:18rem; display:inline-block ">
+        <img src="{{d.doc_image.url}}" class="card-img-top w-50 h-50 d-block mx-auto img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{d.doc_name}}</h5>
+            <p class="card-text">{{d.doc_spec}}</p>
+            <h6>Department:{{d.dep_name}}</h6>
+        </div>
+    </div>
+
+    {% endfor%}
+
+</div>
+</div>
+
+
+{% endblock%}
+
+
+
